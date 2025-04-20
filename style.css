@@ -1,0 +1,97 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e3ced7;
+    font-family: "Comic Sans MS", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .game-container {
+    width: 258px;
+    height: 258px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .character-wrapper {
+    width: 258px;
+    height: 258px;
+    position: relative;
+  }
+  
+  .character-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .category-buttons {
+    position: absolute;
+    bottom: 0.3em;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.2em;
+    padding: 0 0.3em;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+  
+  .category-buttons button {
+    background-color: #edcdd1;
+    border: none;
+    padding: 0.3em 0.4em;
+    font-size: 0.6rem;
+    border-radius: 0.8em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .category-buttons button:hover {
+    background-color: #e0e1f6;
+  }
+  
+  .nav-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 0.5em;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+  
+  .nav-buttons button {
+    background-color: #bdd5b2;
+    border: none;
+    padding: 0.3em 0.6em; /* Adjusted padding */
+    font-size: 1.2rem; /* Reduced font size */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1;
+  }
+  
+  
+  
+  .nav-buttons button:hover {
+    background-color: #c7a6ae;
+  }
+  
